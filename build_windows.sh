@@ -5,5 +5,5 @@ if [ ! -d "$PWD/build" ]; then
   mkdir $PWD/build
 fi
 
-cmake -B$PWD/build
+cmake -B$PWD/build -G "MinGW Makefiles"
 cmake --build $PWD/build 
